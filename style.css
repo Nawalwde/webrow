@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.description {
+    font-size: 24px;
+    width: 700px;
+    margin: 1px;
+}
+
+.description p span {
+    color: rgb(253, 73, 18);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.layout {
+    background-color: white;
+    width: 430px;
+    height: 230px;
+    margin: 1px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgb(228, 177, 177);
+}
+
+input {
+    width: 31vw;
+    height: 4vh;
+    font-size: 17px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 6px;
+}
+
+button {
+    color: white;
+    background-color: rgb(253, 73, 18);
+    border: none;
+    width: 31vw;
+    height: 8vh;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-bottom: 1px;
+}
+
+.sign-in {
+    text-align: center;
+    padding: 10px;
+}
+
+.sign-in a {
+    color: rgb(253, 73, 18);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+@media (max-width:1250px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .description {
+        flex-wrap: wrap;
+        font-size: 18px;
+        width: 450px;
+        margin: 13px;
+    }
+
+    .layout{
+        width: 350px;
+        height: 230px;
+    }
+
+    input{
+        width: 68vw;
+        font-size: 12px;
+        border: none;
+    }
+
+    button{
+        width: 68vw;
+    }
+}
